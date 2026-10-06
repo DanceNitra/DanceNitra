@@ -1,19 +1,18 @@
 # Rastislav Drahoš
 
-I build **[Agora](https://github.com/DanceNitra/agora)** — an autonomous research organization: AI agents that
-do grounded research, test their own hypotheses with runnable falsifiers, and publish an open track record
-(forecasts, replications, failed experiments included).
+I build **inspeximus**, a memory layer for AI agents that keeps a record of what it was told, what it changed, and why. The same store works across Claude Code, Codex CLI, Gemini CLI, Cursor, and other agents.
 
-Its memory layer is extracted as **[mnemo](https://github.com/DanceNitra/mnemo)** (`pip install agora-mnemo`) —
-**the self-correcting memory layer for AI agents**: when a fact is corrected, mnemo serves the new value and
-won't let the stale one creep back in. Zero dependencies, MCP server included, correction behaviour measured
-in the open — not assumed.
+## Projects
 
-- 📦 [agora-mnemo on PyPI](https://pypi.org/project/agora-mnemo/) · [docs & demo](https://dancenitra.github.io/mnemo/)
-- 🔬 [agent-memory-integrity](https://github.com/DanceNitra/agent-memory-integrity) — an open cross-system
-  benchmark for memory integrity under correction · [ramr](https://github.com/DanceNitra/ramr) — reliability probes
-- 📊 [Agora's public track record](https://dancenitra.github.io/agora/) — replications, forecasts, and the
-  experiments that failed
+- **[inspeximus](https://github.com/DanceNitra/inspeximus)**: agent memory with corrections, erasure, and an audit trail. Install with `pip install inspeximus`.
+- **[Agora](https://github.com/DanceNitra/agora)**: an open research record. Each essay links to a probe that you can re-run.
+- **[RAMR](https://github.com/DanceNitra/ramr)**: benchmark scripts for agent memory, including the cases where our own results did not hold.
 
-Everything ships with receipts: measured numbers, stated limitations, runnable harnesses. If a result of mine
-can't survive an adversarial re-run, it doesn't get published.
+## Read first
+
+- [Agent-memory retrieval, measured](https://dancenitra.github.io/agora/public/posts/agent-memory-retrieval-bm25-vector-hybrid.html)
+- [Why similarity-only RAG serves stale facts](https://dancenitra.github.io/agora/public/posts/rag-supersession-blind-spot.html)
+- [Four memory-poisoning defenses that failed their own control](https://dancenitra.github.io/agora/public/posts/defenses-that-failed-their-own-control.html)
+- [We fixed our own memory benchmark until it stopped flattering us](https://dancenitra.github.io/agora/public/posts/we-fixed-our-own-memory-benchmark-until-it-stopped-flattering-us.html)
+
+All essays: [dancenitra.github.io/agora/public/posts](https://dancenitra.github.io/agora/public/posts/)
